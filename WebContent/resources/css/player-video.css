@@ -1,0 +1,156 @@
+@import url(http://fonts.googleapis.com/css?family=Cousine:400,400italic,700,700italic);
+
+html, body{
+	font-family:'Cousine',Arial; 
+	font-size:11px;
+}
+
+
+
+
+.titulos{
+	text-transform: uppercase;
+	font-size:11.5px;
+	font-weight: bold;
+}
+
+.btnSala{
+	background-color:#fac905; 
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:11px;
+	cursor: pointer;
+	margin-bottom: 15px;
+	vertical-align: middle;
+	padding: 8.5px;
+}
+
+.boxItemVideo{
+	width:100%; 
+	float: left; 
+	padding: 10px 10px 10px 0px;
+}
+
+.thumbnail{
+	width: 100px; 
+	height: 62px; 
+	margin-right:8px; 
+	float: left;
+	border:4px solid #fac905;  
+}
+
+.txtDescricaoVideo{
+	width: 98%;
+}
+
+.diplayVideo{
+	
+	width: 514px;
+	height: 290px;
+	border: 0px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+#boxPlayer{
+	width:625px;
+	float:left; 
+	border: 0px solid #fac905;
+}
+
+#playerContentBox{
+	position:static;
+	width:514px; 
+	float:left; 
+	margin-right: 12px;
+}
+
+#displayContent{
+	width:93%;
+	float:left;
+	margin-top:8px;
+	margin-bottom: 15px;
+}
+
+
+#canaisAoVivo{
+	width: 95px;
+	float: left; 
+ 	font-size: x-small;
+}
+
+#tituloVideoteca{
+	float: left; 
+	width: 100%;
+}
+
+#listContent{
+	float: left; 
+	width:373px;
+	height:372px;
+	border: 0px solid red;
+}
+
+#twitterContent{
+	width: 250px;
+	float: left;
+	border: 0px solid green;
+	
+}
+
+#boxPaginacao{
+	width: 95%; 
+	float:left;
+}
+
+#descVideoCorrente{
+	font-size: 12px;
+}
+
+#duracaoVideoCorrente, #dataVideoCorrente{
+	font-size: 10px;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#paginacao{
+
+}
+
+.linkTooltip{
+	
+	text-decoration: none; color: black;	
+}
+
+/* Easy Tooltip */
+
+#easyTooltip{
+	margin:0 10px 1em 0;
+	width:250px;
+	padding:8px;
+	background:#fff;
+	border:5px solid #fac905;
+	height:130px;				
+}
+#easyTooltip h3{
+	margin:0 0 .5em 0;
+	font:13px Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+}	
+#easyTooltip p{
+	margin:0 0 .5em 0;
+}		
+#easyTooltip img{
+	background:#fff;
+	padding:1px;
+	border:1px solid #e1e1e1;
+	float:left;
+	margin-right:10px;
+}		
+
+.itemTooltip{display:none;}
+					
+
+/* // Easy Tooltip */
+

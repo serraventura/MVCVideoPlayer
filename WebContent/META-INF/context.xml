@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/MVCVideoPlayer">
+	
+    <Resource name="jdbc/MVCVideoPlayer"
+              auth="Container"
+              type="javax.sql.DataSource"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              testWhileIdle="true"
+              testOnBorrow="true"
+              testOnReturn="false"
+              validationQuery="SELECT 1"
+              validationInterval="30000"
+              timeBetweenEvictionRunsMillis="30000"
+              closeMethod="close"
+              maxActive="30"
+              maxIdle="30"
+              minIdle="30"
+              maxWait="10000"
+              initialSize="10"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              logAbandoned="true"
+              minEvictableIdleTimeMillis="30000"
+              jmxEnabled="true"
+              jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+              driverClassName="com.mysql.jdbc.Driver"
+              username="root"
+              password=""              
+              url="jdbc:mysql://localhost:3306/MVCVideoPlayer?autoReconnect=true"
+     />
+</Context>

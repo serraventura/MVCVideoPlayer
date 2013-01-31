@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Inovniplay</display-name>
+  <welcome-file-list>
+    <welcome-file>/resources/index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>springmvc</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/spring-context.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springmvc</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  
+  <!-- PARAMETROS DE CONFIGURACAO -->
+  <context-param>
+	<param-name>AWSCredentialsKeyId</param-name><param-value>aaaaaaaaaaaaa</param-value>
+  </context-param>
+  
+  <context-param>
+	<param-name>AWSCredentialsSecretKey</param-name><param-value>bbbbbbbbbbbbb</param-value>
+  </context-param>
+  
+  <context-param>
+	<param-name>extensoesPermitidas</param-name><param-value>flv, flv</param-value>
+  </context-param>
+
+  <context-param>
+	<param-name>extensaoVideoCorrente</param-name><param-value>.flv</param-value>
+  </context-param>
+
+  <context-param>
+	<param-name>diretorioVideosPublicados</param-name><param-value>publicado/</param-value>
+  </context-param>
+  
+  <!--  // localhost no MAC -->
+  <context-param>
+	<param-name>diretorioBaseInstalacaoFfmpeg</param-name><param-value>/opt/local/bin/</param-value>
+  </context-param>
+  
+  <context-param>
+	<param-name>pathUploadVideos</param-name><param-value>/Users/serraventura/Library/apache-tomcat-7.0.27/webapps/upload-videos/</param-value>
+  </context-param>
+  
+  <context-param>
+	<param-name>S3Buckets</param-name><param-value>videos.publicados</param-value>
+  </context-param>
+  
+  <!-- FIM PARAMETROS DE CONFIGURACAO -->
+  
+  
+  <error-page>
+    <exception-type>javax.servlet.ServletException</exception-type>
+    <location>/resources/erro.html</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/resources/erro.html</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/resources/404.html</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/resources/500.html</location>
+  </error-page>
+ 
+  
+</web-app>
